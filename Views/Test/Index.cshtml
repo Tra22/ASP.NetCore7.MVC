@@ -1,0 +1,24 @@
+﻿@model MVC.Models.TestModel;
+@{
+    ViewData["Title"] = "Test Page";
+}
+
+ 
+@using (Html.BeginForm("Create", "Test", FormMethod.Post))
+{ 
+    <table>
+        <tr>
+            <td>Enter ID: </td>
+            <td>@Html.TextBoxFor(m => m.Id)</td>
+            <td>@Html.ValidationMessageFor(m => m.Id)</td>
+        </tr>
+        <tr>
+            <td>Enter Name: </td>
+            <td>@Html.TextBoxFor(m => m.Name)</td>
+            <td>@Html.ValidationMessageFor(m => m.Name)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        </tr>
+    </table>
+}

@@ -29,7 +29,7 @@ These instructions will get you to setup the project, install sdk and add packag
      - AutoMapper
        `dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection`
      - Code Generate
-        `dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design`
+        `dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design -v 7.0.11`
 4.  Code generate (in this case I don't use it. I just clone from github some paths what I want to implement)
      - Generate Identity UI
          `dotnet aspnet-codegenerator identity -h`
